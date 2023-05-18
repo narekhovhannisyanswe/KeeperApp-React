@@ -1,18 +1,15 @@
-import './App.css';
+import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Notes from "./components/Notes";
-import Form from "./components/Form";
-
-
-let isRegistered = true;
+import Note from "./components/Note";
+import CreateArea from "./components/CreateArea";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <Form isRegistered={isRegistered} />
-      <Notes />
+      <CreateArea />
+      <Note key={1} title="Note title" content="Note content" />
       <Footer />
     </div>
   );
